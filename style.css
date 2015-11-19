@@ -1,0 +1,205 @@
+body{
+	margin: 0 auto;
+	background-color: #eee;
+}
+a{
+	text-decoration: none;
+}
+#header-wrapper{
+	width: 100%;
+	height: 145px;
+	background-color: lightgreen;
+	margin: 0px auto;
+	position: fixed;
+	top: 0;
+	/*z-index: 100;*/
+}
+#top-header{
+	width: 100%;
+	max-width: 1024px;
+	height: 70px;
+	background-color: #1D1C1C;
+	margin: -13px auto;
+	padding-top: 37px;
+}
+#logo{
+	float: left;
+	width: 14%;		
+}
+#search{
+	float: left;
+	width: 50%;
+	/*background-color: white;*/
+	
+
+}
+#search input{
+	width: 230px;
+	height: 30px;
+	border-radius: 3px;
+	margin-left: 4%;
+}
+#search #location{
+	width: 130px;
+	height: 30px;
+	border-radius: 3px;
+	margin-left: 5px;
+}
+#search button{
+	height: 35px;
+	width: 100px;
+	border-radius: 3px;
+	background-color: #49BEDA;
+}
+#user-menu{
+	width: 24%;
+	max-width: 280px;
+	float: left;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 3px;	
+	/*background-color: white;*/
+	padding-left: 10px;
+	padding-top: 5px;
+	font-size: 0.8em;
+}
+#user-menu span{
+	font-size: 1.5em;
+	color: white;
+}
+#user-menu a{
+	color: white;
+}
+nav{
+	width: 100%;
+	background-color: #555;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 45px;
+	text-align: center;
+	margin: 0 45px;
+	color: white;
+}
+nav a{
+	color: white;
+}
+/*header ends here------------------------*/
+#body-wrapper{
+	width: 100%;
+	max-width: 1024px;
+	margin: 180px auto;
+
+}
+#img-slider{
+	width: 100%;
+	height: 400px;
+	border:1px solid;
+}
+.sec-wrapper{
+	width: 100%;
+	height: 300px;
+	border: 1px solid;
+	background-color: pink;
+	margin: 10px auto;
+}
+.items{
+	border:1px solid;
+	float: left;
+	width: 21%;
+	margin: 1%;
+}
+.items img{
+	width: 210px;
+	height: 175px;
+	background-size: cover;
+}
+.text-wrapper{
+
+}
+
+/*footer starts here---------------------*/
+
+footer{
+	width: 100%;
+	background-color: #222;
+	margin: 5px auto;
+	height: 210px;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer h3{
+	color: #FFFFFF;
+}
+#sub-footer{
+	width: 100%;
+	max-width: 1024px;
+	margin: 5px auto;
+}
+#company, #work, #more{
+	display: block;
+	width: 20%;
+	padding: 2px;
+	margin: 5px;
+	/*height: 250px;*/
+	float: left;
+	background-color: transparent;
+
+}
+#company a, #work a, #more a{
+	display: block;
+	margin: 1px;
+	padding: 1px;
+	color: #949494;
+}
+#us a{
+	display: inline-block;
+}
+#us{
+	background-color: transparent;
+	width: 10%;
+	float: left;
+}
+#mobile-app{
+	width: 19%;
+	background-color: green;
+	float: right;
+	margin-top: 1%;
+}
+#mobile-app img{
+	width: 50px;
+	height: 75px;
+	float: left;
+	margin-top: 1px;
+	margin-right: 3px;
+
+}
+
+
+
+
+
+#low-footer{
+	background-color: #555;
+	width: 100%;
+	z-index: -100;
+	position: relative;
+}
+#low-footer-wrapper{
+	background-color: #555;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 3px;
+	text-align: center;
+}
+
+
+
+
+
+
