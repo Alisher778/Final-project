@@ -1,22 +1,51 @@
 body{
 	margin: 0 auto;
 	background-color: #eee;
+	
 }
 a{
 	text-decoration: none;
 }
+#modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #3D3636;
+	z-index: 99999;
+	opacity: 0;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+
+}
+#modal:target{
+	opacity: 1;
+	pointer-events:auto;
+}
+#modal  div{
+	width: 560px;
+	position: relative;
+	margin: 1% auto;
+	padding: 10px;
+	border-radius: 8px;
+	background: #fff;
+	clear: left;
+}
+.close{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
 #header-wrapper{
 	width: 100%;
 	height: 145px;
-	background:url("");
+	background-color: lightgreen;
 	margin: 0px auto;
 	position: fixed;
 	top: 0;
-	z-index: 100;
-}
-#header-color{
-	width: 100%;
-	background-color: #1D1C1C; 
+	/*z-index: 100;*/
 }
 #top-header{
 	width: 100%;
@@ -74,24 +103,6 @@ a{
 #user-menu a{
 	color: white;
 }
-#nav-color{
-	background-color: #555;
-	width: 100%;
-}
-#cart-wrapper{
-	width: 200px;
-	height: 250px;
-	background: #1E9D11;
-	z-index: 999;
-	position: fixed;
-	left: 5%;
-	top: 1%;
-	opacity: 0;
-}
-#cart-wrapper:target{
-	opacity: 1;
-	pointer-events:auto;
-}
 nav{
 	width: 100%;
 	background-color: #555;
@@ -109,73 +120,155 @@ nav a{
 	color: white;
 }
 /*header ends here------------------------*/
+#background{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: -100;
+	top: 1%;
+	left: 0;
+	
+
+}
 #body-wrapper{
 	width: 100%;
 	max-width: 1024px;
-	margin: 180px auto;
-
+	margin: 150px auto;
+	background-color: #FCFAFA;
+	padding-left: 10px;
+	opacity: 1.0;
 }
-
-
-#img-slider{
+h3{
+	color: #101011;
+}
+#main-contant{
 	width: 100%;
-	height: 450px;
-	border:1px solid;
-	position: relative;
+	/*background-color: yellow;*/
+	height: 2500px;
+	}
+#right{
+	width: 73%;
+	background-color: white;
+	float: left;
+	height: 15%;
+	margin-left: 1%;
 }
-#img{
-	width: 100%;
-	height: 450px;
-	position: absolute;
+#right img{
+	/*width: 25%;*/
+	background-color: transparent;
+	float: left;
 }
-#left-nav{
-height: 400px;
-width: 100px;
-position: absolute;
-left: 0px;
-top: 0px;
+#right article{
+	margin-left: 3%;
+	width: 32%;
+	float: left;
 }
-#left-nav img{
-	position: absolute;
-	top: 45%;
-	left: 1px;
+.crossed{
+	display: inline;
 }
-#right-nav{
-	height: 400px;
+
+.view{
 	width: 100px;
-	position: absolute;
-	right: 0px;
-	top: 0px;
+	height: 20px;
+	background-color: green;
+	padding: 15px;
+	color: white;
+	text-shadow: 1px black;
+	float: right;
+	margin-right: 2%;
+	margin-top: 20%;
+	text-align: center;
 }
-#right-nav img{
-	position: absolute;
-	top: 45%;
-	right: 1px;
+#img-top article{
+	width: 50%;
+	float: left;
+	padding: 2%;
+	margin: -1%;
+	margin-left: 2%;
+}
+aside{
+	width: 25.33%;
+	height: auto;
+	float: left;
+	margin-top: %;
+	clear: right;
+	padding-left: 2px;
+	margin-left: 2px;
+	
+	/*background-color: #FCF5F5;*/
+}
+aside ul li{
+	list-style-type: none;
+	margin-top: 2%;
+	margin-left: -20px;
+}
+aside a{
+	color: black;
+	font-size: 17px;
 }
 .sec-wrapper{
+	width: 74%;
+	background-color: white;
+	float: right;
+	margin: 15px auto;
+}
+.items{
+	/*border:1px solid;*/
+	float: left;
+	height: 350px;
+	width: 43%;
+	margin: 2%;
+	text-align: center;
+	margin-left: 3%;
+	background-color: #eee;
+}
+.items img{
+	width: 325px;
+	height: 225px;
+	background-size: cover;
+	border-bottom: 1px solid;
+}
+#page-nav{
+	width: 100%;
+	height: 40px;
+	margin: 10px auto;
+	text-align: center;
+	background-color: white;
+	float: right;
+}
+#page-nav ul li{
+	list-style-type: none;
+	display: inline;
+	line-height: 25px;
+	padding: 1px;	
+	font-size: 18px;
+	margin-left: 3%;
+}
+#page-nav a{
+
+}
+
+/*.sec-wrapper{
 	width: 100%;
 	height: 300px;
 	border: 1px solid;
-	background-color: white;
-	margin: 11px 0;
+	background-color: pink;
+	margin: 10px auto;
 }
 .items{
 	border:1px solid;
 	float: left;
-	width: 22%;
+	width: 21%;
 	margin: 1%;
-	background-color: #eee;
 }
 .items img{
-	width: 100%;
-	height: 180px;
+	width: 210px;
+	height: 175px;
 	background-size: cover;
 }
-.items h4, h3{
-	text-align: justify;
-	margin: 2px;
-	padding: 2px;
-}
+.text-wrapper{
+
+}*/
 
 /*footer starts here---------------------*/
 
