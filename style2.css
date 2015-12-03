@@ -100,6 +100,9 @@ a{
 	font-size: 1.5em;
 	color: white;
 }
+#menu-icon{
+	display: none;
+}
 #user-menu a{
 	color: white;
 }
@@ -115,6 +118,17 @@ nav ul li{
 	text-align: center;
 	margin: 0 45px;
 	color: white;
+}
+nav a{
+	color: white;
+	display: block;
+}
+nav a:hover{
+	background-color: orange;
+	padding:1px 70px;
+	border-radius: 85px 2px;
+	margin: 0;
+	
 }
 nav a{
 	color: white;
@@ -342,7 +356,93 @@ footer h3{
 	margin: 0 auto;
 	padding: 3px;
 	text-align: center;
-	font-style: line-thorugh
+	font-style: line-thorugh;
+}
+@media screen and (max-width:478px){
+body {
+	position: absolute;
+}
+}
+@media screen and (max-width: 1004px){
+	#location{
+		display: none;
+	}
+}
+@media screen and (max-width: 885px){
+	nav ul li{
+		margin: 0 15px;
+	}
+	#user-menu{
+		width: 33%;
+		padding-left: 1px;
+		margin: 1px;
+	}
+}
+@media screen and (max-width: 740px){
+	#search, #location, #user-menu{
+		display: none;
+
+	}
+	 	header{
+	 		position: relative;
+	 	}
+	 	#top-header{
+	 		background-color: #061C31;
+	 	}
+	 	#menu-icon{
+	 		display: inline-block;
+	 		position: absolute;
+	 		top: 15px;
+	 		right: 5px;
+	 		color: white;
+
+
+	 	}
+   	 nav ul li {
+   	 	display: block;
+   	 	width: 100%;
+   	 	padding: 2px;
+   	 	margin: 2px;
+   	 	background: #269D0B;
+   	 }
+   	 nav ul li:hover {
+   	 	d
+   	 	background: pink;
+   	 }
+   	 nav span{
+   	 	display: none;
+   	 }
+   	nav ul, nav:active ul{
+   	 	display: none;
+   	 	position: absolute;
+   	 	padding: 10px;
+   	 	background: #405580;
+   	 	border: 1px solid #fff;
+   	 	right: 10px;
+   	 	top: 70px;
+   	 	width: 50%;
+   	 	border-radius: 2px 0 2px 2px;
+   	 }
+   	 
+   	 nav:hover ul{
+   	 	display: block; 
+
+   	 }
+   	  nav a:hover{
+		background-color: orange;
+		padding:12px 110px;
+		border-radius: 9px;
+		margin: 0;
+	}
+
+	#low-footer-wrapper{
+		float: left;
+	}
+
+	footer{
+	float: left;
+	
+	}
 }
 
 
